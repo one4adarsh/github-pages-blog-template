@@ -17,11 +17,10 @@ source "https://rubygems.org"
 # gem "github-pages", group: :jekyll_plugins
 
 # Configure jekyll manually to use minima 3.0 theme
-gem "jekyll", "~> 4.2.0"
-gem "minima", github: "jekyll/minima"
-gem "jekyll-feed", "~> 0.12"
-gem "jekyll-seo-tag"
-gem "jekyll-remote-theme"
+gem "jekyll", "~> 4.2.2"
+# gem "minima", github: "jekyll/minima" # detaching minima
+gem "jekyll-seo-tag", "~> 2.8.0"
+gem "jekyll-remote-theme", "~> 0.4.3"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

@@ -47,4 +47,4 @@ RUN rbenv install ${RUBY_VERSION} \
   && rbenv global ${RUBY_VERSION}
 
 # Install the GitHub Pages-supported version of Jekyll
-RUN gem install jekyll -v '4.3.3'
+RUN gem install jekyll -v '4.2.2'
