@@ -27,7 +27,7 @@ author:
 description: >-
   Sharing insights from my active software engineering projects, investment strategies for 
   financial growth, and valuable lessons from professional connections and influential writings.
-baseurl: "/me" # the subpath of your site, e.g. /blog
+baseurl: "/github-pages-blog-template" # the subpath of your site, e.g. /blog
 url: "https://xadarshkumar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
