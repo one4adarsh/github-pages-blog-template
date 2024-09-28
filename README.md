@@ -1,4 +1,4 @@
-# me
+# github-pages-blog-template
 
 ## Setup and run locally -
 
