@@ -1,6 +1,42 @@
 # github-pages-blog-template
 
-## Setup and run locally -
+<!-- TOC -->
+* [github-pages-blog-template](#github-pages-blog-template)
+  * [Get Started](#get-started)
+  * [Setup and run locally](#setup-and-run-locally)
+  * [License](#license)
+  * [Docs](#docs)
+    * [Initial setup steps](#initial-setup-steps)
+    * [Setup GitHub Actions](#setup-github-actions)
+    * [Remove dependency from minima theme](#remove-dependency-from-minima-theme)
+    * [References](#references)
+<!-- TOC -->
+
+This is the template of my blog. Feel free to use this to setup your blog running with zero-configuration.
+
+## Get Started
+
+- Using this template, create a new repository.
+- To get running, you need to follow 3 simple steps -
+  1. In [`_config.yml`](https://github.com/xadarshkumar/github-pages-blog-template/blob/main/_config.yml) file - update the values of following fields accordingly
+    ```
+    title: <your_title>
+    author:
+      name: <your_name>
+      email: <your_email>
+    description: <your_desciption>
+    baseurl: <your_repository_name>
+    url: "https://<your_username>.github.io" 
+    ```
+
+  2. Go to `Settings` tab on the repository -> `Pages` -> Under `Build and deployment` - Change `Source` to `GitHub Actions`. 
+
+  3. Go to `Actions` tab on the repository -> Select latest failed workflow -> Click `Re-run all jobs`.
+
+Wait for few minutes till GitHub Actions deploy step completes.
+You can access it at - https://<your_username>.github.io/<your_repository_name>/
+
+## Setup and run locally
 
 - In Visual Studio Code, install two extensions: 
   - Docker (from Microsoft)
@@ -10,7 +46,13 @@
 - Update the bundle - `bundle update`
 - Run using - `bundle exec jekyll serve --livereload`
 
-## Initial setup steps -
+## License
+
+The project is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Docs
+
+### Initial setup steps
 
 - setup `Dockerfile`
 - open project in Dev Containers
@@ -38,14 +80,14 @@
 - configure GitHub Actions to build and run
 - (optional) remove dependency from minima theme
 
-## Setup GitHub Actions -
+### Setup GitHub Actions
 
 To run a specific Jekyll version and custom gems, we need to use GitHub Actions to build the Jekyll 
 - Go to `Settings` tab on the repository -> `Pages` -> Change `Source` to `GitHub Actions`
 - Go to `Actions` tab on the repository -> Click `New workflow` -> search `Jekyll` workflow -> click `Configure` -> review and commit changes
 - On pushing, the action will be triggered and the build will start
 
-## Remove dependency from minima theme -
+### Remove dependency from minima theme
 
 We can override the theme and modify some or all of the files
 - open project in Dev Container
@@ -65,12 +107,8 @@ We can override the theme and modify some or all of the files
     gem "minima", github: "jekyll/minima"
   ```
 
-## References -
+### References
 
 - [Bill Raymond - youtube video](https://youtu.be/zijOXpZzdvs?si=D9Bmpqtt1hoF3x6s)
 - [GitHub Action setup](https://jekyllrb.com/docs/continuous-integration/github-actions/)
 - [minima theme repository](https://github.com/jekyll/minima)
-
-## License -
-
-The projet is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
