@@ -37,6 +37,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll/tagging
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
 
 remote_theme: jekyll/minima
 
